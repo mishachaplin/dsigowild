@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'MontserratAlternates';
   src: local('MontserratAlternates'),
-    url(/MontserratAlternates-Black.ttf) format("ttf");
+    url(./MontserratAlternates-Black.ttf) format("truetype");
   font-weight: 900;
   font-display: swap;
 }
