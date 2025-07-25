@@ -1,0 +1,24 @@
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../images/jungle.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 4px solid black;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'MontserratAlternates';
+}
+
+.title-text {
+  display: block;
+}
+
+.dsi {
+  font-size: 150px;
+}

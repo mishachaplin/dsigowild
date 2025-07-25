@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'MontserratAlternates';
+  src: local('MontserratAlternates'),
+    url(/MontserratAlternates-Black.ttf) format("ttf");
+  font-weight: 900;
+  font-display: swap;
+}
