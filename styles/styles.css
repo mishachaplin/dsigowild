@@ -36,7 +36,7 @@
 
 .title-text {
   display: block;
-  font-size: 150px;
+  font-size: clamp(4.6875rem, 3.5498rem + 4.8544vw, 9.375rem);
   line-height: 80%;
 }
 
@@ -45,6 +45,6 @@
 }
 
 .go {
-  font-size: 300px;
+  font-size: clamp(9.375rem, 7.0995rem + 9.7087vw, 18.75rem);
   color: #F5A34C;
 }
