@@ -50,42 +50,89 @@
   color: #F5A34C;
 }
 
-
-/* СТИЛИ гугл-формы от ChatGPT */
+/* Стили для анкеты */
 
 .form-section {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(34, 34, 34, 0.9)),
-              url('../images/jungle.png') center/cover no-repeat;
-  padding: 80px 20px;
+  background: url('../images/jungle.png') center/cover no-repeat;
   min-height: 100vh;
+  padding: 60px 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.form-container {
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(6px);
-  padding: 40px;
-  border: 2px solid #F5A34C;
-  border-radius: 16px;
-  max-width: 800px;
+.form-glass {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 32px;
+  padding: 60px 40px;
   width: 100%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
 }
 
-.form-title {
+.form-heading {
   font-family: 'MontserratAlternates', sans-serif;
-  font-size: 42px;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.glass-form {
+  display: grid;
+  gap: 24px;
+}
+
+.glass-form input,
+.glass-form select {
+  padding: 18px 20px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  font-size: 16px;
+  font-family: 'MontserratAlternates', sans-serif;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  transition: background 0.2s ease;
+}
+
+.glass-form input::placeholder,
+.glass-form select {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.glass-form input:focus,
+.glass-form select:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.glass-form button {
+  background-color: #F5A34C;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 18px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: 'MontserratAlternates', sans-serif;
+}
+
+.glass-form button:hover {
+  background-color: #e18a2e;
+}
+
+.form-status {
+  margin-top: 24px;
   color: #fff;
   text-align: center;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-}
-
-.form-iframe {
-  border: none;
-  width: 100%;
-  min-height: 1300px;
-  border-radius: 12px;
+  font-weight: bold;
+  font-family: 'MontserratAlternates', sans-serif;
 }

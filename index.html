@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="./styles/globals.css" />
   <link rel="stylesheet" href="./styles/styles.css" />
 </head>
-<body>
   <header class="header">
     <div class="title_container">
       <h1 class="title">
@@ -17,26 +16,34 @@
         <span class="title-text wild">Wild</span>
       </h1>
       </div>
-      
   </header>
 
-  <section class="form-section">
-  <div class="form-container">
-    <h2 class="form-title">Анкета участника поездки</h2>
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSfTVW-gcTAxGx60iyPxIpVq4rfI7LF9LF-jIrXBezwRWvrHwA/viewform?embedded=true"
-      width="100%"
-      height="1300"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0"
-      loading="lazy"
-      class="form-iframe"
-    >
-      Загрузка…
-    </iframe>
+<section class="form-section" id="registration">
+  <div class="form-glass">
+    <h2 class="form-heading">РЕГИСТРАЦИЯ</h2>
+    <form id="wild-form" class="glass-form">
+      <input type="text" name="lastName" placeholder="Фамилия (как в загранпаспорте)" required />
+      <input type="text" name="firstName" placeholder="Имя (как в загранпаспорте)" required />
+      <select name="title" required>
+        <option value="">MR / MRS</option>
+        <option value="MR">MR</option>
+        <option value="MRS">MRS</option>
+      </select>
+      <input type="date" name="birthDate" placeholder="Дата рождения" required />
+      <input type="text" name="citizenship" placeholder="Гражданство" required />
+      <input type="text" name="passportNumber" placeholder="Серия и номер паспорта" required />
+      <input type="date" name="passportIssued" placeholder="Дата выдачи паспорта" required />
+      <input type="date" name="passportExpires" placeholder="Дата окончания действия паспорта" required />
+      <input type="text" name="roommate" placeholder="Проживание вместе (с кем хотите жить)" required />
+      <input type="tel" name="phone" placeholder="Мобильный телефон" required />
+      <button type="submit">Отправить</button>
+    </form>
+    <div id="form-status" class="form-status"></div>
   </div>
 </section>
 
+
+
+<script src="index.js"></script>
 </body>
 </html>
